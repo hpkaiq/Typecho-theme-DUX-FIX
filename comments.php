@@ -17,7 +17,6 @@ if($c_encode && $file_url){
   $c_decode = urldecode($c_encode);
   $file_url = $c_decode.'<br>'.$file_url;
 }
-
 ?>
 <?php
 
@@ -123,12 +122,10 @@ function threadedComments($comments, $options) {
             </div>
         </form>
 
-
 <form id="tf" action="https://pan.cccyun.cc/api.php?backurl=" method="post" enctype="multipart/form-data" onsubmit="return beforeSubmit();">
 <input type="file" name="file" style="display:inline-block;margin-left:auto;height:30px;width:auto;">
 <input type="submit" style="float:right;" value="上传">
 </form>
-
 
 
 <?php } ?>

@@ -27,6 +27,7 @@ if($this->user->hasLogin() || $result) {
 else{
     $content = preg_replace("/\[hide\](.*?)\[\/hide\]/sm",'<div class="reply2view">此处内容需要评论回复后方可阅读。</div>',$this->content);
 }
+    $content = str_ireplace("<img src", '<img referrerpolicy="no-referrer" src', $content);
 echo $content 
 ?>
                 </article>
